@@ -77,3 +77,30 @@ You can download datasets from:
 
 🔗 https://universe.roboflow.com/eyescareworkspace/pterygium-lqtlf
 
+## 📸 Project Screenshots
+
+### 🖥️ User Interface
+![UI](assets/ui1.png)
+
+![UI](assets/ui2.png)
+
+### 📷 Real-time Detection
+![Webcam](assets/webcam.png)
+
+### 🔥 Grad-CAM Visualization
+![GradCAM](assets/gradcam.png)
+
+### 📊 Confusion Matrix
+![Confusion](assets/confusion_matrix.png)
+
+### 📈 ROC Curve
+![ROC](assets/roc_curve.png)
+
+### Precision vs Recall
+![ROC](assets/precision_vs_recall.png)
+
+### accuracy graph
+![ROC](assets/accuracy_graph.png)
+
+### loss graph
+![ROC](assets/loss_graph.png)
