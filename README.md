@@ -1,106 +1,142 @@
-# 👓 Smart Eye Diagnosis System
+# 👓 Smart Eye Diagnosis using AI/ML
 
-An AI-powered system for detecting eye diseases such as Cataract (Mature & Immature) and Pterygium using Deep Learning and Computer Vision.
+An intelligent real-time eye disease detection system using Deep Learning and deployed on edge devices like Raspberry Pi.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Detects:
-  - Immature Cataract
-  - Mature Cataract
-  - Pterygium
-  - Normal Eye
+* 🔍 Detects eye conditions:
 
-- 📷 Image Upload + Camera Input
-- 📊 Confidence Score Visualization
-- 📄 Downloadable Report
-- 🌐 Streamlit Web Interface
-- ⚡ Fast and Lightweight Model (EfficientNet)
-
----
-
-## 🧠 Tech Stack
-
-- Python
-- TensorFlow / Keras
-- OpenCV
-- Streamlit
-- NumPy
+  * Mature Cataract
+  * Immature Cataract
+  * Normal Eye
+  * Pterygium
+* 📷 Real-time detection using webcam / Raspberry Pi camera
+* ⚡ Lightweight deployment using TensorFlow Lite
+* 🔥 Explainable AI using Grad-CAM
+* 🌐 Interactive UI using Streamlit
 
 ---
 
-## 📁 Project Structure
-smart-eye-diagnosis/
-│
-├── app/ # Streamlit app
-├── src/ # Prediction logic
-├── data/ # Dataset (not uploaded)
-├── models/ # Trained models
-├── notebooks/ # Training notebooks
-├── README.md
+## 🧠 Model Details
 
+* Model: EfficientNetB0
+* Framework: TensorFlow / Keras
+* Input Size: 224 × 224
+* Classes: 4 (immature, mature, normal, pterygium)
+* Deployment: TensorFlow Lite (Edge AI)
 
 ---
 
-## ⚙️ Installation
+## 📊 Results
 
-```bash
-git clone https://github.com/your-username/smart-eye-diagnosis.git
-cd smart-eye-diagnosis
+* ✅ High accuracy (~99%)
+* ✅ Real-time inference
+* ✅ Robust classification across multiple eye conditions
 
-conda create -n eye_env python=3.10
-conda activate eye_env
-
-pip install -r requirements.txt
-
-▶️ Run Application
-
-streamlit run app/streamlit_app.py
-
-📊 Model Details
-
-Model: EfficientNetB0
-Transfer Learning
-Data Augmentation applied
-Multi-class classification (4 classes)
-
-📚 Dataset Sources
-
-⚠️ Datasets are not included due to size and privacy concerns.
-
-You can download datasets from:
-
-🔗 https://www.kaggle.com/datasets/rifdana/cataract-photo-image-dataset
-
-🔗 https://www.kaggle.com/datasets/linabennaa/eye-disease-image-dataset-mendeley
-
-🔗 https://universe.roboflow.com/eyescareworkspace/pterygium-lqtlf
+---
 
 ## 📸 Project Screenshots
 
 ### 🖥️ User Interface
-![UI](assets/ui1.png)
 
-![UI](assets/ui2.png)
+![UI1](assets/ui1.png)
+![UI2](assets/ui2.png)
 
-### 📷 Real-time Detection
-![Webcam](assets/webcam.png)
+---
 
 ### 🔥 Grad-CAM Visualization
+
 ![GradCAM](assets/gradcam.png)
 
+---
+
 ### 📊 Confusion Matrix
+
 ![Confusion](assets/confusion_matrix.png)
 
+---
+
 ### 📈 ROC Curve
+
 ![ROC](assets/roc_curve.png)
 
-### Precision vs Recall
-![ROC](assets/precision_vs_recall.png)
+---
 
-### accuracy graph
-![ROC](assets/accuracy_graph.png)
+### 📉 Precision vs Recall
 
-### loss graph
-![ROC](assets/loss_graph.png)
+![PR](assets/precision_vs_recall.png)
+
+---
+
+### 📊 Accuracy Graph
+
+![Accuracy](assets/accuracy_graph.png)
+
+---
+
+### 📉 Loss Graph
+
+![Loss](assets/loss_graph.png)
+
+---
+
+## ⚙️ How to Run
+
+```bash
+git clone https://github.com/vedang2504/smart-eye-diagnosis
+cd smart-eye-diagnosis
+pip install -r requirements.txt
+streamlit run app/streamlit_app.py
+```
+
+---
+
+## 📦 Model Download
+
+Due to size limitations, the trained model is hosted externally:
+
+👉 (Paste your Google Drive link here)
+
+---
+
+## 🧩 Project Structure
+
+```
+smart-eye-diagnosis/
+├── app/              # Streamlit app
+├── src/              # Prediction logic
+├── data/             # Dataset (not uploaded)
+├── models/           # Trained models
+├── notebooks/        # Training notebooks
+├── assets/           # Screenshots
+└── README.md
+```
+
+---
+
+## 🧠 System Workflow
+
+Camera → Image Capture → Preprocessing → TFLite Model → Prediction → Display Output
+
+---
+
+## 📌 Future Enhancements
+
+* 🔊 Voice feedback system
+* 📱 Mobile app integration
+* ☁️ Cloud deployment
+* ⚡ Faster edge optimization
+
+---
+
+## 👨‍💻 Author
+
+Vedang Doley
+
+---
+
+## 📄 License
+
+This project is for educational and research purposes.
